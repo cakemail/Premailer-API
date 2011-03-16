@@ -1,3 +1,17 @@
+# Install
+
+## Dependencies
+
+Gems:
+
+ - premailer
+ - sinatra
+ - json
+
+## Configs
+
+Set environment variable `RACK_ENV` to `production` if in production. This will make the API listen on port 80 instead of port 4567.
+
 # API Documentation
 
 ## POST /premailer
