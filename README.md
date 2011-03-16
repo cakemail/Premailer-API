@@ -7,12 +7,12 @@
 #### Required
 
 - String `html`
- - HTML content to be cleaned.
+  - HTML content to be cleaned.
 
 #### Optional
 
 - Bool `with_warnings` (default: `0`)
- - When `1`, warnings are returned.
+  - When `1`, warnings are returned.
 
 ### Response
 
