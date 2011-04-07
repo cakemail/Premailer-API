@@ -14,7 +14,7 @@ Set environment variable `RACK_ENV` to `production` if in production. This will 
 
 # API Documentation
 
-## POST /premailer
+## POST /clean
 
 ### Parameters
 

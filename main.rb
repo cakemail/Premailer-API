@@ -6,7 +6,7 @@ configure :production do
   set :port, 80
 end
 
-get '/premailer' do
+get '/clean' do
 <<-eos
   <form method="POST">
   <textarea name="html"></textarea>
@@ -16,7 +16,7 @@ get '/premailer' do
 eos
 end
 
-post '/premailer' do
+post '/clean' do
   error 400 if !params[:html]
 
   with_warnings = params[:with_warnings] == '1' ? true : false
