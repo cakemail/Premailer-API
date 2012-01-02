@@ -4,6 +4,7 @@ GEM
     addressable (2.2.6)
     css_parser (1.2.5)
       addressable
+    hpricot (0.8.5)
     htmlentities (4.3.1)
     json (1.6.4)
     premailer (1.7.3)
@@ -22,6 +23,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  hpricot
   json
   premailer
   sinatra
