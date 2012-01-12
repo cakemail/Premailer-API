@@ -20,6 +20,9 @@ Set environment variable `RACK_ENV` to `production` if in production. This will 
 - Bool `with_warnings` (default: `0`)
   - When `1`, warnings are returned.
 
+- Bool `remove_comments` (default: `0`)
+  - When `1`, HTML comments are removed.
+
 ### Response
 
     {
