@@ -1,3 +1,12 @@
+GIT
+  remote: git@github.com:cakemail/premailer.git
+  revision: 184f15377b1c661c27e92a173a3fb3fe70acac18
+  branch: feature/remove_script_tags
+  specs:
+    premailer (1.7.3)
+      css_parser (>= 1.1.9)
+      htmlentities (>= 4.0.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -7,9 +16,6 @@ GEM
     hpricot (0.8.5)
     htmlentities (4.3.1)
     json (1.6.4)
-    premailer (1.7.3)
-      css_parser (>= 1.1.9)
-      htmlentities (>= 4.0.0)
     rack (1.4.0)
     rack-protection (1.2.0)
       rack
@@ -25,5 +31,5 @@ PLATFORMS
 DEPENDENCIES
   hpricot
   json
-  premailer
+  premailer!
   sinatra
