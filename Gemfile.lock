@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:cakemail/premailer.git
+  remote: git://github.com/cakemail/premailer.git
   revision: 184f15377b1c661c27e92a173a3fb3fe70acac18
   branch: feature/remove_script_tags
   specs:
