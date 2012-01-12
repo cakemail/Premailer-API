@@ -21,13 +21,15 @@ post '/clean' do
 
   with_warnings = params[:with_warnings] == '1' ? true : false
   remove_comments = params[:remove_comments] == '1' ? true : false
+  remove_script_tags = params[:remove_script_tags] == '1' ? true : false
   html = params[:html]
 
   premailer = Premailer.new(html,
     :warn_level => Premailer::Warnings::SAFE,
     :with_html_string => true,
     :preserve_styles => true,
-    :remove_comments => remove_comments
+    :remove_comments => remove_comments,
+    :remove_script_tags => remove_script_tags
   )
 
   content_type :json

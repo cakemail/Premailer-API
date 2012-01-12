@@ -23,6 +23,9 @@ Set environment variable `RACK_ENV` to `production` if in production. This will 
 - Bool `remove_comments` (default: `0`)
   - When `1`, HTML comments are removed.
 
+- Bool `remove_script_tags` (default: `0`)
+  - When `1`, script tags are removed.
+
 ### Response
 
     {
