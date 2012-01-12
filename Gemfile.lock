@@ -1,7 +1,7 @@
 GIT
   remote: git://github.com/cakemail/premailer.git
   revision: 184f15377b1c661c27e92a173a3fb3fe70acac18
-  branch: feature/remove_script_tags
+  tag: 1.7.3-with-remove-scripts
   specs:
     premailer (1.7.3)
       css_parser (>= 1.1.9)
