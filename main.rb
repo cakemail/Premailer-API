@@ -11,7 +11,15 @@ get '/clean' do
   <form method="POST">
   <textarea name="html"></textarea>
   <button>Submit</button>
-  <input type="hidden" name="with_warnings" value="1"/>
+  <div>With warnings?:
+  <input type="checkbox" name="with_warnings" value="1"/>
+  </div>
+  <div>Remove comments:
+  <input type="checkbox" name="remove_comments" value="1"/>
+  </div>
+  <div>Remove script tags:
+  <input type="checkbox" name="remove_script_tags" value="1"/>
+  </div>
   </form>
 eos
 end
