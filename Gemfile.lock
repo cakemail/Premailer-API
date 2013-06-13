@@ -1,9 +1,9 @@
 GIT
   remote: git://github.com/cakemail/premailer.git
-  revision: 263781d68c9a392752b8835b3b67900e2f194054
+  revision: 1b619db6e34623616ca19cd5364537218fd05983
   branch: feature/remove_script_tags
   specs:
-    premailer (1.7.4a)
+    premailer (1.7.5)
       css_parser (>= 1.1.9)
       htmlentities (>= 4.0.0)
 
@@ -34,5 +34,5 @@ PLATFORMS
 DEPENDENCIES
   hpricot
   json
-  premailer (~> 1.7.4a)!
+  premailer (~> 1.7.5)!
   sinatra
