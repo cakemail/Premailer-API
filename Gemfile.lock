@@ -8,7 +8,7 @@ GIT
       htmlentities (>= 4.0.0)
 
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     addressable (2.2.6)
     css_parser (1.2.6)
