@@ -48,5 +48,4 @@ post '/clean' do
   data = {:html => premailer.to_inline_css}
   data[:warnings] = premailer.warnings if with_warnings
   data.to_json
-  logger.info { "pid:#{$$} returned" }
 end
