@@ -28,7 +28,7 @@ end
 post '/clean' do
   error 400 if !params[:html]
 
-	logger = Logger.new('/var/log/passenger/premailer.log')
+  logger = Logger.new('/var/log/passenger/premailer.log')
   logger.info { "pid:#{$$} " +  @params.inspect }
 
   with_warnings = params[:with_warnings] == '1' ? true : false
@@ -48,5 +48,5 @@ post '/clean' do
   data = {:html => premailer.to_inline_css}
   data[:warnings] = premailer.warnings if with_warnings
   data.to_json
-	logger.info { "pid:#{$$} returned" }
+  logger.info { "pid:#{$$} returned" }
 end
