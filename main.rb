@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'premailer'
 require 'json'
-require 'syslog-logger'
+require 'logger'
 
 configure :production do
   set :port, 80
@@ -28,7 +28,7 @@ end
 post '/clean' do
   error 400 if !params[:html]
 
-  logger = Logger::Syslog.new('premailer', Syslog::LOG_LOCAL7)
+  logger = Logger.new('/var/log/passenger/premailer.log', 10, 10485760)
   logger.info { "pid:#{$$} " +  @params.inspect }
 
   with_warnings = params[:with_warnings] == '1' ? true : false
@@ -48,5 +48,4 @@ post '/clean' do
   data = {:html => premailer.to_inline_css}
   data[:warnings] = premailer.warnings if with_warnings
   data.to_json
-	logger.info { "pid:#{$$} returned" }
 end
